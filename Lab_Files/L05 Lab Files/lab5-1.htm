@@ -4,7 +4,6 @@
 <title>Lab 5-1</title>
 
 <script type="text/Javascript">
-<!--
 
 /************************************************
   The checkGrade() function tests a numerical
@@ -12,26 +11,21 @@
 ************************************************/
   
 function checkGrade(form) {
-  var myGrade = form.myselect.options[form.myselect.selectedIndex].text; 
+  var myGrade = form.myselect.options[form.myselect.selectedIndex].text;
  
-/*****************************************************
-  Create an if statement. As the condition for the if
-  statement, test the myGrade variable for a value of 
-  91 or greater. If the value is greater than or equal
-  to 91, output an alert that informs the user that 
-  their grade is an A.
-*****************************************************/
+  if (myGrade >= 91) {
+    alert("Grade = A");
+  }
+  else if (myGrade >= 81 && (myGrade <= 90)) {
+    alert("Grade = B");
+  }
+  else {
+    alert("Grade = C or below")
+  }
  
- 
- 
- 
- 
- 
- 
-}//End checkGrade() function
- 
+}
 
-//-->
+
 </script>
 </head>
 <body>
@@ -60,6 +54,10 @@ function checkGrade(form) {
 <option>82</option>
 <option>81</option>
 <option>80</option>
+<option>79</option>
+<option>78</option>
+<option>77</option>
+
 </select>
 <p>
 <input type="button" value="Check Grade" onclick=
