@@ -5,7 +5,6 @@
 <title>Lab 7-8</title>
 
 <script type="text/javascript">
-<!--
 
   function runClock() {
   var timeNow = new Date();
@@ -14,9 +13,9 @@
   var seconds = timeNow.getSeconds();
   var ampm = "";
 
-    (seconds < 10) ? seconds = "0" + seconds : seconds;
-    (minutes < 10) ? minutes = "0" + minutes : minutes;
-    (hours < 12) ? ampm = "AM" : ampm = "PM";
+  (seconds < 10) ? seconds = "0" + seconds : seconds;
+  (minutes < 10) ? minutes = "0" + minutes : minutes;
+  (hours < 12) ? ampm = "AM" : ampm = "PM";
   (hours > 12) ? hours = hours - 12 : hours;
   (hours == 0) ? hours = 12 : hours;
   
@@ -36,7 +35,6 @@
 
 
 <h4>Time Watcher</h4>
-
-
+The time is: <input type="text" name="clockBox" size="15" onfocus="blur();" />
 </body>
 </html>
