@@ -41,6 +41,6 @@ function loadData(URL)
 // Make the request
 	xmlReq.send (null);
 }
-
+//read
 
 
